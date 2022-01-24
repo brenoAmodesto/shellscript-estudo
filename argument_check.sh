@@ -1,6 +1,6 @@
 #!/bin/bash
 
-arg=$($1)
+arg={$1}
 
 if [ $arg = "pizza" ]; then
     echo "Com maça?"
