@@ -1,7 +1,9 @@
 #!/bin/bash
 
-#arg={$1}
-#Não está funcionando...
+arg=$1
+
+echo "$arg"
+
 #if [ $arg = "pizza" ]; then
 #    echo "Com maça?"
 #else
