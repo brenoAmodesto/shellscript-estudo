@@ -1,12 +1,11 @@
 #!/bin/bash
 
-arg=$1
+echo -n "Insert: "
 
-arg2=$( echo "$arg" | wc -c ) 
-
-echo "$arg2"
-
-while [ "$arg2" > 1 ]
+while read linha; do
 do
-  echo "teste"
+
+  echo -n "$linha" | wc -c
+  echo -n "Insert: "
+
 done
