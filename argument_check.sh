@@ -5,7 +5,7 @@ arg=$1
 #echo "$arg"
 
 if [ $arg = "pizza" ]; then
-    echo "Com maça?"
+    echo "with pineapple?"
 else
-    echo "Eu quero pizza"
+    echo "i want pizza"
 fi
