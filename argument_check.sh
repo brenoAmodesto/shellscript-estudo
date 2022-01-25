@@ -2,10 +2,10 @@
 
 arg=$1
 
-echo "$arg"
+#echo "$arg"
 
-#if [ $arg = "pizza" ]; then
-#    echo "Com maça?"
-#else
-#    echo "Eu quero pizza"
-#fi
+if [ $arg = "pizza" ]; then
+    echo "Com maça?"
+else
+    echo "Eu quero pizza"
+fi
