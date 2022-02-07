@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dir1 = $@
+dir1=$@
 
 if [ diff -s $dir1 ]
 then
