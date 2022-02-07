@@ -1,11 +1,14 @@
 #!/bin/bash
 
-dir1=$@
+dir1= $1
+dir2= $2
 
-if [ diff -s $dir1 ]
+dif=$(diff -s $1 $2)
+
+if [ "$dif" ]
 then
     echo "Idêntico"
 else
-    echo "Não é não."
+    echo "Diferente"
 fi
   
