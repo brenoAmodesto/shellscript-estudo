@@ -3,7 +3,7 @@
 dif=$(diff -q $1 $2 > /dev/null)
 
 
-if [ "$dif" ]
+if [ $dif ]
 then
     echo "Idêntico"
 else
