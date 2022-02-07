@@ -1,6 +1,8 @@
 #!/bin/bash
 
-if [ diff -s $@ ]
+dir1 = $@
+
+if [ diff -s $dir1 ]
 then
     echo "Idêntico"
 else
