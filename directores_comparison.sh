@@ -3,7 +3,8 @@
 dir1= $1
 dir2= $2
 
-dif=$(diff -s $1 $2)
+dif=$(diff -q $dir1 $dir2 > /dev/null)
+
 
 if [ "$dif" ]
 then
