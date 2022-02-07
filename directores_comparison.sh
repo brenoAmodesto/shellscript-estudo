@@ -1,9 +1,6 @@
 #!/bin/bash
 
-dir1= $1
-dir2= $2
-
-dif=$(diff -q $dir1 $dir2 > /dev/null)
+dif=$(diff -q $1 $2 > /dev/null)
 
 
 if [ "$dif" ]
