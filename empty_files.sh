@@ -1,24 +1,13 @@
 #!/bin/bash
 
-#!/bin/bash
-
 echo -n -e "Digite o caminho: \n"
 
 read dir
 
-echo "Arquivos serão excluidos no diretório -> $dir"
+echo "Arquivos vazios serão excluidos no diretório -> $dir"
 
-dir1=$(find $dir -empty)
-
-for i in $dir1
+find $dir -empty | while read -r line;
 do
-
-    echo "Feito"
-    rm $dir1
-    echo "Excluído com sucesso -> $dir1"
-
+   rm -Rf $line;
+   echo "Removidos -> $line"
 done
-
-#dir=$1
-#echo "$dir"
-~                         
